@@ -1,0 +1,9 @@
+figure,numeric_code,category,count,share_pct,aggregated_other
+policy_family_stacked,1,cameo_01_make_public_statement,32649,50.005361,0
+policy_family_stacked,2,market_price_or_liquidity_effect,5448,8.344182,0
+policy_family_stacked,3,other_financial_event,3548,5.434133,0
+policy_family_stacked,4,legislative_policy_authorization,3341,5.117091,0
+policy_family_stacked,5,business_operations_adjustment,2875,4.403363,0
+policy_family_stacked,6,cameo_07_provide_aid_or_public_support,2748,4.20885,0
+policy_family_stacked,7,macroeconomic_real_activity_effect,2230,3.415478,0
+policy_family_stacked,8,Other,12452,19.071541,1

@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="PAWS is a policy-driven dataset for studying grounded multi-agent behaviour around financial policy shocks."
+    />
+    <meta name="theme-color" content="#071a2d" />
+    <meta property="og:title" content="PAWS — Policy-driven Agentic World Simulation" />
+    <meta
+      property="og:description"
+      content="Explore policy episodes, news evidence, stakeholder actions, and market context in a replay-ready research dataset."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="assets/images/og.png" />
+    <meta property="og:image:width" content="1731" />
+    <meta property="og:image:height" content="909" />
+    <meta property="og:image:alt" content="PAWS — Policy-driven Agentic World Simulation" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="PAWS — Policy-driven Agentic World Simulation" />
+    <meta name="twitter:description" content="Policy episodes, stakeholder actions, and market context in one research dataset." />
+    <meta name="twitter:image" content="assets/images/og.png" />
+    <title>PAWS — Policy-driven Agentic World Simulation</title>
+    <link rel="icon" type="image/png" href="assets/images/favicon.png" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="config.js" defer></script>
+    <script src="script.js" defer></script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Dataset",
+        "name": "PAWS: Policy-driven Agentic World Simulation",
+        "description": "A policy-centred dataset aligning verified financial and economic policy interventions with dated news, stakeholder actions, normalized organizations, structured event frames, and daily market-return context.",
+        "keywords": ["multi-agent systems", "financial policy", "event frames", "stakeholder actions", "financial NLP"],
+        "version": "PAWS Version 1.0"
+      }
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <header class="site-header" id="top">
+      <div class="header-inner">
+        <a class="brand" href="index.html" aria-label="PAWS home">
+          <img src="assets/images/paws-wordmark.png" alt="PAWS" width="176" height="56" />
+          <span>Dataset project</span>
+        </a>
+        <nav class="top-nav" aria-label="Primary navigation">
+          <a class="nav-link is-active" href="index.html" aria-current="page">Overview</a>
+          <a class="nav-link" href="#playground">Explore</a>
+          <a class="nav-link" href="information.html">Information</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <section class="hero section-shell" aria-labelledby="project-title">
+        <div class="eyebrow"><span class="eyebrow-dot"></span> Research dataset · Preprint release</div>
+        <h1 id="project-title" class="hero-title">
+          <img class="hero-title-logo" src="assets/images/paws-wordmark.png" alt="PAWS" width="600" height="189" />
+          <span class="hero-title-text">Policy-driven Agentic World Simulation</span>
+        </h1>
+        <p class="hero-deck">
+          A temporally grounded dataset for tracing how policies, news, institutions, and markets interact.
+        </p>
+        <div class="authors" aria-label="Researchers and affiliations">
+          <p class="author-names">Tiviatis Sim<sup>1</sup>, Woon Jia Hui<sup>1</sup>, Xinming Gao<sup>2</sup>, Chen Gao<sup>2</sup>, Fengbin Zhu<sup>1</sup>, Zheng Huanhuan<sup>3</sup>, Chua Tat Seng<sup>1</sup>, Kenji Kawaguchi<sup>1</sup></p>
+          <p class="author-affiliations"><span><sup>1</sup>National University of Singapore</span><span><sup>2</sup>Tsinghua University</span><span><sup>3</sup>City University of Hong Kong</span></p>
+        </div>
+
+        <nav class="resource-nav" aria-label="Project resources">
+          <a class="resource-button is-pending" data-resource="paper" aria-disabled="true"><small>PDF</small> Paper <em>Soon</em></a>
+          <a class="resource-button is-pending" data-resource="arxiv" aria-disabled="true"><small>↗</small> arXiv <em>Soon</em></a>
+          <a class="resource-button is-pending" data-resource="code" aria-disabled="true"><small>&lt;/&gt;</small> Code <em>Open</em></a>
+          <a class="resource-button is-pending" data-resource="dataset" aria-disabled="true"><small>DB</small> Dataset <em>Soon</em></a>
+          <a class="resource-button" href="information.html"><small>i</small> Information <em>Open</em></a>
+        </nav>
+        <p class="resource-note">The Dataset download contains the sanitized public subset used by this website. For access to the full dataset, contact the corresponding author listed in the <a href="information.html#licensing-title">Information section</a>.</p>
+
+        <figure class="hero-figure hero-pipeline-figure">
+          <div class="hero-figure-frame">
+            <img
+              src="assets/images/paws-pipeline.png"
+              alt="PAWS dataset generation pipeline, from verified policy selection through news and market collection, action extraction, validation, and multi-agent simulation"
+              width="1920"
+              height="873"
+              fetchpriority="high"
+            />
+          </div>
+          <figcaption>
+            <span>Pipeline overview</span>
+            <p>PAWS connects policy interventions to dated evidence, structured stakeholder actions, and replay-ready world states.</p>
+          </figcaption>
+        </figure>
+      </section>
+
+      <section class="intro section-shell section-rule" id="introduction" aria-labelledby="intro-title">
+        <div class="section-label">01 · Introduction</div>
+        <div class="intro-grid">
+          <h2 id="intro-title">From policy shock<br />to agent action.</h2>
+          <div class="prose lead-copy">
+            <p>
+              PAWS is a policy-centred dataset for studying multi-agent behaviour in financial markets. It aligns
+              verified policy episodes with policy-window news, normalized organizations, extracted actions, and
+              daily market-return context.
+            </p>
+            <p>
+              Instead of treating news or prices as isolated signals, PAWS preserves the sequence: what changed,
+              who responded, how they acted, and what the surrounding market looked like.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="overview-band" aria-labelledby="overview-title">
+        <div class="section-shell">
+          <div class="section-heading-row">
+            <div>
+              <div class="section-label light">02 · Dataset overview</div>
+              <h2 id="overview-title">One auditable view of a policy episode.</h2>
+            </div>
+            <p>Current database snapshot reported in the paper.</p>
+          </div>
+          <dl class="stat-grid">
+            <div><dt>Verified policy episodes</dt><dd>36</dd><span>human-checked interventions</span></div>
+            <div><dt>Policy query keys</dt><dd>301</dd><span>date-bounded retrieval paths</span></div>
+            <div><dt>Policy-linked news rows</dt><dd>12,727</dd><span>provenance-preserving evidence</span></div>
+            <div><dt>Structured action rows</dt><dd>65,291</dd><span>with corresponding event frames</span></div>
+          </dl>
+          <div class="data-note-row">
+            <div><span>Coverage</span><strong>Financial &amp; economic policy</strong></div>
+            <div><span>Primary unit</span><strong>Policy · actor · action · day</strong></div>
+            <div><span>Dataset license</span><strong>GNU GPLv3</strong></div>
+            <div><span>Release status</span><strong>Preprint preview</strong></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="figures section-shell section-rule" id="figures" aria-labelledby="figures-title">
+        <div class="section-label">03 · Visual overview</div>
+        <div class="section-heading-row figure-heading">
+          <div>
+            <h2 id="figures-title">See the dataset from three angles.</h2>
+          </div>
+        </div>
+        <div class="figure-tabs" role="tablist" aria-label="Dataset figures">
+          <button id="figure-tab-timeline" type="button" role="tab" aria-selected="true" aria-controls="figure-panel" data-figure="timeline">Timeline</button>
+          <button id="figure-tab-stakeholders" type="button" role="tab" aria-selected="false" aria-controls="figure-panel" data-figure="stakeholders">Stakeholders</button>
+          <button id="figure-tab-taxonomy" type="button" role="tab" aria-selected="false" aria-controls="figure-panel" data-figure="taxonomy">Event frames</button>
+        </div>
+        <figure class="figure-viewer" id="figure-panel" role="tabpanel" aria-labelledby="figure-tab-timeline">
+          <div class="figure-canvas">
+            <img id="figure-image" src="figures/fig4_policy_action_timeline_wide.png" alt="Actions for policies P5 through P43 plotted by relative position in each policy's observed action window; color encodes linked origin-news count" width="4208" height="3433" loading="lazy" />
+          </div>
+          <figcaption>
+            <div><span id="figure-number">Figure 04</span><strong id="figure-title">Policy action timeline</strong></div>
+            <p id="figure-caption">Relative action timing across verified policy episodes; color encodes each action's linked origin-news count.</p>
+            <a id="figure-full" href="figures/fig4_policy_action_timeline_wide.png" target="_blank" rel="noopener">Open full resolution ↗</a>
+          </figcaption>
+        </figure>
+      </section>
+
+      <section class="playground section-shell section-rule" id="playground" aria-labelledby="playground-title">
+        <div class="section-label">04 · Interactive playground</div>
+        <div class="playground-heading">
+          <div>
+            <h2 id="playground-title">Inspect the chain of evidence.</h2>
+            <p>Explore a sanitized public subset derived from the PAWS SQLite tables. Article bodies and raw event-frame payloads are not published here.</p>
+          </div>
+          <div class="subset-badge"><span id="dataset-record-total">…</span> published News + Action rows</div>
+        </div>
+
+        <div class="database-note" id="database-note" aria-live="polite">
+          <span class="database-pulse" aria-hidden="true"></span>
+          <p><strong>Loading public database subset…</strong><small>The full SQLite database is never sent to the browser.</small></p>
+        </div>
+
+        <section class="interactive-card timeline-studio" aria-labelledby="timeline-title">
+          <div class="studio-heading">
+            <div>
+              <span class="mini-label">Interactive evidence map</span>
+              <h3 id="timeline-title">Policy-normalized timeline</h3>
+              <p>Every point keeps its real date. Horizontal position shows where it falls within the selected policy’s observed evidence window or documented policy window.</p>
+            </div>
+            <div class="studio-controls">
+              <label><span>Policy</span><select id="timeline-policy"><option value="all">Sample policies</option></select></label>
+              <label><span>Normalize by</span><select id="timeline-window"><option value="policy">Documented policy window</option><option value="observed">Robust observed evidence window</option></select></label>
+            </div>
+          </div>
+          <div class="timeline-legend" aria-label="Timeline legend">
+            <label><input type="checkbox" id="show-news" checked /> <i class="legend-mark news"></i> News rows</label>
+            <label><input type="checkbox" id="show-actions" checked /> <i class="legend-mark action"></i> Action rows</label>
+            <span>Position: <b>0%</b> beginning · <b>100%</b> end. Dense rows are evenly sampled here; every published row is searchable below.</span>
+          </div>
+          <div class="timeline-layout">
+            <div>
+              <div class="timeline-chart" id="timeline-chart" aria-label="Normalized policy evidence timeline"></div>
+              <div class="timeline-axis" aria-hidden="true"><span>0%</span><span>25%</span><span>50%</span><span>75%</span><span>100%</span></div>
+              <p class="visually-hidden" id="timeline-summary" aria-live="polite"></p>
+            </div>
+            <article class="timeline-detail" id="timeline-detail" aria-live="polite">
+              <span class="detail-empty">Select a news or action point to inspect its real date, source row, and linked records.</span>
+            </article>
+          </div>
+        </section>
+
+        <section class="interactive-card entity-studio" aria-labelledby="entity-title">
+          <div class="studio-heading">
+            <div>
+              <span class="mini-label">Organizations &amp; involvement</span>
+              <h3 id="entity-title">Who appears across policy episodes?</h3>
+              <p>Ranked from all action rows linked to the policies in the public subset. Select an organization to compare its policy involvement and most frequent actions.</p>
+            </div>
+            <div class="studio-controls entity-controls">
+              <label><span>Policy</span><select id="entity-policy"><option value="all">Sample policies</option></select></label>
+              <label><span>Show</span><select id="entity-limit"><option value="12">Top 12</option><option value="20">Top 20</option><option value="36">Top 36</option></select></label>
+            </div>
+          </div>
+          <div class="entity-layout">
+            <div class="entity-cloud" id="entity-cloud" aria-label="Top organizations"></div>
+            <article class="entity-detail" id="entity-detail" aria-live="polite">
+              <span class="detail-empty">Select an organization to see its policy involvement and recurring action families.</span>
+            </article>
+          </div>
+        </section>
+
+        <div class="explorer" data-explorer>
+          <div class="explorer-titlebar">
+            <div><span class="mini-label">SQLite table browser</span><h3>Search the published rows</h3></div>
+            <p id="schema-summary">Loading table manifest…</p>
+          </div>
+          <div class="explorer-toolbar">
+            <label class="search-field">
+              <span>Search records</span>
+              <input type="search" id="record-search" placeholder="Try “Federal Reserve” or “liquidity”" autocomplete="off" />
+            </label>
+            <label>
+              <span>SQLite table</span>
+              <select id="table-filter">
+                <option value="News">News</option>
+                <option value="Action">Action</option>
+                <option value="ActionFrame">ActionFrame</option>
+                <option value="Policies">Policies</option>
+              </select>
+            </label>
+            <label>
+              <span>Policy episode</span>
+              <select id="policy-filter"><option value="all">Sample policies</option></select>
+            </label>
+            <button class="text-button" id="reset-filters" type="button">Reset filters</button>
+          </div>
+
+          <div class="explorer-body">
+            <aside class="record-list-panel" aria-label="Dataset records">
+              <div class="panel-kicker"><span id="result-count" aria-live="polite">Loading records…</span><small id="active-table-label">News table</small></div>
+              <div class="record-list" id="record-list"></div>
+            </aside>
+            <article class="record-inspector" id="record-inspector" aria-live="polite"></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="citation-section section-rule" aria-labelledby="citation-title">
+        <div class="section-shell citation-grid">
+          <div>
+            <div class="section-label light">05 · Citation</div>
+            <h2 id="citation-title">Build on PAWS.</h2>
+            <p>The formal paper citation will replace this preview entry when publication details are available.</p>
+          </div>
+          <div class="citation-card">
+            <div class="citation-card-top"><span>BibTeX · preview</span><div><button type="button" data-copy-citation>Copy</button><a href="PAWS-preview.bib" download>Download .bib</a></div></div>
+            <pre id="citation-code"><code>@misc{paws_dataset,
+  title  = {PAWS: Policy-driven Agentic World Simulation},
+  author = {Sim, Tiviatis and Woon, Jia Hui and Gao, Xinming and Gao, Chen and Zhu, Fengbin and Zheng, Huanhuan and Seng, Chua Tat and Kawaguchi, Kenji},
+  note   = {Pre-publication dataset; citation to be updated}
+}</code></pre>
+            <p class="citation-status" aria-live="polite"></p>
+          </div>
+        </div>
+      </section>
+
+      <section class="affiliation-logos section-shell" aria-label="Affiliated institutions">
+        <h2 class="visually-hidden">Affiliated institutions</h2>
+        <div class="affiliation-logo-track">
+          <div class="affiliation-logo-slot"><a href="https://ml.comp.nus.edu.sg" target="_blank" rel="noopener noreferrer" aria-label="Visit NUS School of Computing Deep Learning Lab"><img src="logos/deepLearningLab.png" alt="NUS School of Computing Deep Learning Lab" /></a></div>
+          <div class="affiliation-logo-slot"><a href="https://www.nextcenter.org/" target="_blank" rel="noopener noreferrer" aria-label="Visit NExT++ Research Center"><img src="logos/NExT2B_edited.png" alt="NExT++ Research Center" /></a></div>
+          <div class="affiliation-logo-slot"><a href="https://www.bnrist.tsinghua.edu.cn/bnristen/" target="_blank" rel="noopener noreferrer" aria-label="Visit Tsinghua University BNRist"><img src="logos/tsinghua logo.png" alt="Tsinghua University" /></a></div>
+          <div class="affiliation-logo-slot"><a href="https://www.aidf.nus.edu.sg/" target="_blank" rel="noopener noreferrer" aria-label="Visit NUS Asian Institute of Digital Finance"><img src="logos/nus aidf.png" alt="NUS Asian Institute of Digital Finance" /></a></div>
+          <div class="affiliation-logo-slot"><a href="https://cosilab.github.io/" target="_blank" rel="noopener noreferrer" aria-label="Visit NUS CoSI Lab"><img src="logos/cosi lab.png" alt="NUS CoSI Lab" /></a></div>
+          <div class="affiliation-logo-slot"><a href="https://scholars.cityu.edu.hk/" target="_blank" rel="noopener noreferrer" aria-label="Visit City University of Hong Kong Scholars"><img src="logos/cityUHK.png" alt="City University of Hong Kong" /></a></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="section-shell">
+        <a class="brand footer-brand" href="#top"><img src="assets/images/paws-wordmark.png" alt="PAWS" width="132" height="42" /></a>
+        <p>Structure informed by <a href="https://nerfies.github.io/" target="_blank" rel="noopener">Nerfies</a> and <a href="https://mmdocbench.github.io/" target="_blank" rel="noopener">MMDocBench</a>. Original site code licensed MIT.</p>
+        <a href="information.html">Project information →</a>
+      </div>
+    </footer>
+  </body>
+</html>

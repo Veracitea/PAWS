@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Project information, contributors, release notes, licensing, and privacy-conscious visitor analytics for PAWS." />
+    <meta name="theme-color" content="#071a2d" />
+    <meta property="og:title" content="PAWS — Project information" />
+    <meta property="og:description" content="How PAWS is constructed, validated, governed, and maintained." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="assets/images/og.png" />
+    <meta property="og:image:width" content="1731" />
+    <meta property="og:image:height" content="909" />
+    <meta property="og:image:alt" content="PAWS — Policy-driven Agentic World Simulation" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="PAWS — Project information" />
+    <meta name="twitter:description" content="How PAWS is constructed, validated, governed, and maintained." />
+    <meta name="twitter:image" content="assets/images/og.png" />
+    <title>Information — PAWS</title>
+    <link rel="icon" type="image/png" href="assets/images/favicon.png" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="config.js" defer></script>
+    <script src="information.js" defer></script>
+  </head>
+  <body class="information-page">
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <header class="site-header" id="top">
+      <div class="header-inner">
+        <a class="brand" href="index.html" aria-label="PAWS home">
+          <img src="assets/images/paws-wordmark.png" alt="PAWS" width="176" height="56" />
+          <span>Dataset project</span>
+        </a>
+        <nav class="top-nav" aria-label="Primary navigation">
+          <a class="nav-link" href="index.html">Overview</a>
+          <a class="nav-link" href="index.html#playground">Explore</a>
+          <a class="nav-link is-active" href="information.html" aria-current="page">Information</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <section class="info-hero section-shell">
+        <div class="eyebrow"><span class="eyebrow-dot"></span> Project information</div>
+        <div class="info-hero-grid">
+          <h1>How PAWS is built—and who is building it.</h1>
+          <div>
+            <p>Documentation for the dataset lifecycle, contributor roles, responsible use, licensing, affiliations, and project reach.</p>
+            <div class="status-row">
+              <span><i></i> PAWS Version 1.0 </span>
+              <span>Last reviewed · September 2026</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="info-section section-shell section-rule" aria-labelledby="lifecycle-title">
+        <div class="section-label">01 · Dataset lifecycle</div>
+        <div class="info-section-grid">
+          <div>
+            <h2 id="lifecycle-title">Summary of data pipeline built by the research team.</h2>
+            <p class="section-aside">Please refer to the paper for detailed information. Latest Version of PAWS Database is managed by Tiviatis Sim. </p>
+          </div>
+          <ol class="lifecycle-list">
+            <li><span>01</span><div><strong>Select &amp; review policies</strong> <span class="lifecycle-names"> Woon Jia Hui, Zheng Huanhuan</span><p>Candidate financial and economic policy episodes are checked for dates, scope, measurable relevance, and supporting documentation.</p></div></li>
+            <li><span>02</span><div><strong>Collect dated context</strong> <span class="lifecycle-names"> Tiviatis Sim, Xinming Gao</span><p>Date-bounded queries gather policy-window news while market tables provide contemporaneous numerical context.</p></div></li>
+            <li><span>03</span><div><strong>Extract stakeholder actions</strong> <span class="lifecycle-names"> Tiviatis Sim</span><p>Actors, actions, dates, source links, locations, and structured event-frame fields are extracted from canonical source groups.</p></div></li>
+            <li><span>04</span><div><strong>Normalize &amp; coalesce</strong> <span class="lifecycle-names"> Tiviatis Sim</span><p>Entity aliases are resolved to organizations and related daily actions are merged without losing linked policy, news, or raw-action IDs.</p></div></li>
+            <li><span>05</span><div><strong>Validate &amp; release</strong> <span class="lifecycle-names"> Tiviatis Sim, Xinming Gao</span><p>AI-assisted checks and human review produce a replay-ready policy–agent–day view with auditable provenance.</p></div></li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="responsibility-band" aria-labelledby="responsibility-title">
+        <div class="section-shell">
+          <div class="section-label light">02 · Responsible use</div>
+          <div class="responsibility-grid">
+            <div>
+              <h2 id="responsibility-title">Built for research,<br />not financial advice.</h2>
+              <p>PAWS is a curated replay dataset, not a causal estimate of policy impact or a live trading signal.</p>
+            </div>
+            <div class="responsibility-cards">
+              <article><span>Scope</span><h3>Historical policy environments</h3><p>The dataset supports research into stakeholder response, action timing, influence, and replay around documented events.</p></article>
+              <article><span>Known limitations</span><h3>Uneven evidence density</h3><p>Older and lower-profile policies may have sparser news coverage. Entity resolution and assisted extraction can carry residual noise.</p></article>
+              <article><span>Interpretation</span><h3>Context, not causality</h3><p>Market context is aligned in time but does not, on its own, establish that a policy or stakeholder action caused an observed return.</p></article>
+              <article><span>Release practice</span><h3>Provenance before scale</h3><p>The public subset should expose construction notes while respecting source rights and excluding material that cannot be redistributed.</p></article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="info-section section-shell section-rule" aria-labelledby="contributors-title">
+        <div class="section-label">03 · Contributors</div>
+        <div class="contributors-heading">
+          <h2 id="contributors-title">Contribution record.</h2>
+          <p>PAWS Version 1.0</p>
+        </div>
+        <div class="contributor-table" role="table" aria-label="Draft contributor roles">
+          <div class="contributor-row header" role="row"><span role="columnheader">Contributor</span><span role="columnheader">Affiliation</span><span role="columnheader">Contribution</span><span role="columnheader">Status</span></div>
+          <div class="contributor-row" role="row"><strong role="cell">Primary Investigator · Tiviatis Sim</strong><span role="cell">NUS SoC (Deep Learning Lab / NExT++ / CoSI Lab)</span><span role="cell">Conceptualization, Methodology, Data Curation (News Data, Action Data, Entity Data), Data Validation, Software, Writing</span><span role="cell"><i>Confirm</i></span></div>
+          <div class="contributor-row" role="row"><strong role="cell">Finance researcher · Woon Jia Hui</strong><span role="cell">NUS AIDF</span><span role="cell">Policy Curation, Data Curation (Financial Data), Financial Analysis, Writing</span><span role="cell"><i>Confirm</i></span></div>
+          <div class="contributor-row" role="row"><strong role="cell">Dataset curator · Xinming Gao</strong><span role="cell">Tsinghua University</span><span role="cell">Data Curation (News Data), Data Validation</span><span role="cell"><i>Confirm</i></span></div>
+          <div class="contributor-row" role="row"><strong role="cell">Other collaborators · Chen Gao#, Fengbin Zhu*, Zheng Huanhuan+*, Chua Tat Seng*, Kenji Kawaguchi*</strong><span role="cell">*NUS; #Tsinghua University; +City University of Hong Kong</span><span role="cell"> Paper Review and Writing, Advising and Supervision, Resources</span><span role="cell"><i>Confirm</i></span></div>
+        </div>
+      </section>
+
+      <section class="info-section section-shell section-rule" aria-labelledby="licensing-title">
+        <div class="section-label">04 · Licensing &amp; contact</div>
+        <div class="license-layout">
+          <div>
+            <h2 id="licensing-title">PAWS is still an ongoing project.</h2>
+            <p>Feel free to contact for any inquiries. We will be publishing more in the coming months and will continue to work towards a realistic world simulation.</p>
+          </div>
+          <dl class="license-list">
+            <div><dt>Dataset license</dt><dd>GNU General Public License v3.0 (GPLv3)</dd></div>
+            <!-- <div><dt>Paper copyright</dt><dd>To follow the publication venue</dd></div> -->
+            <div><dt>Website source</dt><dd>MIT License</dd></div>
+            <div><dt>Contact</dt><dd>tiviatis@u.nus.edu</dd></div>
+          </dl>
+        </div>
+      </section>
+
+      <section class="reach-section" id="reach" aria-labelledby="reach-title">
+        <div class="section-shell">
+          <div class="reach-topline">
+            <div>
+              <div class="section-label light">05 · Project reach</div>
+              <h2 id="reach-title">Where PAWS is being explored.</h2>
+            </div>
+            <span class="analytics-state" id="analytics-state"><i></i> Ready to connect</span>
+          </div>
+
+          <dl class="reach-metrics">
+            <div><dt>Approx. visitors</dt><dd id="total-visitors">—</dd><span>All time</span></div>
+            <div><dt>Recent visitors</dt><dd id="recent-visitors">—</dd><span>Last 30 days</span></div>
+            <div><dt>Countries / regions</dt><dd id="country-count">—</dd><span>Aggregated only</span></div>
+            <div><dt>Last updated</dt><dd class="date-value" id="stats-updated">Pending</dd><span>Daily after launch</span></div>
+          </dl>
+
+          <div class="reach-board">
+            <div class="reach-visual" aria-labelledby="reach-visual-title">
+              <div class="reach-visual-head"><h3 id="reach-visual-title">Country-level reach</h3><span>No precise locations</span></div>
+              <div class="region-field" id="region-field" aria-live="polite">
+                <div class="region-placeholder"><span>Analytics not connected</span><p>Add a GoatCounter site code in <code>config.js</code>, then provide the daily aggregated country summary.</p></div>
+              </div>
+            </div>
+            <div class="country-list-panel">
+              <div class="reach-visual-head"><h3>Top locations</h3><span>Approximate country</span></div>
+              <div class="country-list" id="country-list">
+                <div class="country-empty">Country totals will appear here after public launch.</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="privacy-note">
+            <strong>Privacy note</strong>
+            <p>Planned analytics are approximate and aggregated. Location is inferred only at country/region level; precise location and IP addresses are not displayed. Low-volume locations should be grouped before publication.</p>
+            <a href="https://www.goatcounter.com/help/privacy" target="_blank" rel="noopener">Read the analytics provider’s privacy approach ↗</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="section-shell">
+        <a class="brand footer-brand" href="index.html"><img src="assets/images/paws-wordmark.png" alt="PAWS" width="132" height="42" /></a>
+        <p>Structure informed by <a href="https://nerfies.github.io/" target="_blank" rel="noopener">Nerfies</a> and <a href="https://mmdocbench.github.io/" target="_blank" rel="noopener">MMDocBench</a>. Original site code licensed MIT.</p>
+        <a href="index.html">Back to overview →</a>
+      </div>
+    </footer>
+  </body>
+</html>

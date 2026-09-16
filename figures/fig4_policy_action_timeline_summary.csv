@@ -1,0 +1,37 @@
+policy_id,policy_name,valid_action_points,first_action_date,last_action_date,observed_duration_days
+5,Emergency Order Halting Short Selling in Financial Stocks,650,1992-01-01,2010-01-01,6575
+6,Term Asset-Backed Securities Loan Facility,3254,1928-01-01,2020-01-01,33603
+7,commercial paper funding facility,2837,1907-01-01,2020-01-01,41273
+8,term auction facility,286,1989-04-01,2008-03-08,6916
+10,decimalization,191,1986-01-01,2001-04-16,5584
+12,jobs and growth tax relief,32,2003-03-18,2004-02-24,343
+13,Operation Twist (Maturity Extension Program),397,1932-01-22,2013-01-07,29571
+14,State-Contingent Forward Guidance (The Evans Rule),298,2005-01-01,2020-08-30,5720
+15,Quantitative Easing 3 (Open-Ended LSAP),1286,1929-10-01,2014-10-14,31059
+16,Dollar Liquidity Swap Line Rate Reduction,235,1977-01-01,2013-11-04,13456
+18,The Durbin Amendment,116,2011-06-29,2011-10-01,94
+19,U.S. Implementation of Basel III,58,1975-01-01,2012-08-13,13739
+20,G-SIFI Designations,191,1973-01-01,2013-03-01,14669
+21,Budget Control Act / S&P Sovereign Downgrade,353,1942-04-01,2026-05-16,30726
+22,Jumpstart Our Business Startups (JOBS) Act,705,1913-01-01,2012-07-06,36346
+23,Say-on-Pay Mandates,31,2008-09-15,2012-04-05,1298
+24,Unconventional Monetary Policy Tapering Announcement (Taper Tantrum),394,2004-01-01,2014-01-09,3661
+25,Title II of the JOBS Act (General Solicitation),183,2004-01-01,2013-12-30,3651
+26,The Volcker Rule (Dodd-Frank Act Section 619),159,1965-01-01,2025-06-09,22074
+27,2014 SEC Money Market Fund Reform,1297,1947-06-23,2016-10-21,25323
+28,Department of Labor (DOL) Fiduciary Rule,149,1970-12-29,2015-07-15,16269
+29,Repeal of the U.S. Crude Oil Export Ban,1354,1911-01-01,2025-01-01,41639
+30,Federal Reserve Zero Lower Bound (ZLB) Liftoff,720,2008-12-16,2025-01-01,5860
+31,Treasury Department Section 385 Regulations (Anti-Inversion and Earnings Stripping Rules),1439,1931-08-29,2026-06-24,34633
+32,The Tax Cuts and Jobs Act (TCJA),1952,1981-08-12,2023-01-01,15117
+33,U.S.-China Trade War Tariff (1),2198,1971-01-01,2019-12-31,17896
+34,U.S.-China Trade War Tariff (2),3398,1919-01-01,2019-05-10,36654
+35,U.S.-China Trade War Tariff (3),5043,1980-01-01,2026-07-11,16993
+36,"Economic Growth, Regulatory Relief, and Consumer Protection Act (EGRRCPA)",250,1970-06-21,2018-08-14,17586
+37,The September 2019 Repo Market Intervention and FOMC Policy Pivot,479,2014-06-11,2019-12-23,2021
+38,Final Rule Implementing Amendments to the Volcker Rule (Volcker 2.0 / 2.1),558,1954-01-01,2020-04-08,24204
+39,Federal Reserve Emergency Rate Cuts and Corporate Credit Facilities (PMCCF/SMCCF),3909,1918-01-01,2021-01-07,37627
+40,"Coronavirus Aid, Relief, and Economic Security (CARES) Act",5622,1939-01-01,2020-12-31,29950
+41,American Rescue Plan Act of 2021 (Third Round Stimulus Checks / EIP3),1681,2009-02-17,2022-03-22,4781
+42,CHIPS and Science Act,17637,1909-01-01,2026-01-01,42734
+43,Infrastructure Investment and Jobs Act (IIJA),6277,1934-01-01,2026-04-01,33693

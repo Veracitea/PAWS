@@ -1,0 +1,10 @@
+figure,numeric_code,category,count,share_pct,aggregated_other
+event_frame_subtype,1,statement,30197,46.249866,0
+event_frame_subtype,2,no_subtype,6520,9.986062,0
+event_frame_subtype,3,price_move,4265,6.532294,0
+event_frame_subtype,4,production_output_change,2293,3.511969,0
+event_frame_subtype,5,pessimistic_comment,2014,3.084652,0
+event_frame_subtype,6,lending_support,1465,2.243801,0
+event_frame_subtype,7,negotiation_meeting,1346,2.06154,0
+event_frame_subtype,8,law_enactment,1214,1.859368,0
+event_frame_subtype,9,Other,15977,24.470448,1
