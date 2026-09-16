@@ -1,0 +1,49 @@
+name: Update privacy-filtered visitor board
+
+on:
+  schedule:
+    - cron: "17 3 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Check analytics configuration
+        id: analytics
+        shell: bash
+        env:
+          GOATCOUNTER_SITE_CODE: ${{ secrets.GOATCOUNTER_SITE_CODE }}
+          GOATCOUNTER_API_TOKEN: ${{ secrets.GOATCOUNTER_API_TOKEN }}
+        run: |
+          if [[ -n "$GOATCOUNTER_SITE_CODE" && -n "$GOATCOUNTER_API_TOKEN" ]]; then
+            echo "ready=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "ready=false" >> "$GITHUB_OUTPUT"
+            echo "Analytics secrets are not configured; leaving the visitor board in preview mode."
+          fi
+
+      - name: Generate public aggregate
+        if: steps.analytics.outputs.ready == 'true'
+        env:
+          GOATCOUNTER_SITE_CODE: ${{ secrets.GOATCOUNTER_SITE_CODE }}
+          GOATCOUNTER_API_TOKEN: ${{ secrets.GOATCOUNTER_API_TOKEN }}
+        run: node scripts/update-visitor-stats.mjs
+
+      - name: Commit changed aggregate
+        if: steps.analytics.outputs.ready == 'true'
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/visitor-stats.json
+          if ! git diff --cached --quiet; then
+            git commit -m "chore: refresh public visitor aggregate"
+            git push
+          fi
