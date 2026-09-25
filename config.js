@@ -1,8 +1,7 @@
 window.PAWS_CONFIG = {
   links: {
     paper: "PAWS.pdf",
-    // Add the public arXiv URL after the preprint is live.
-    arxiv: "", // Example: "https://arxiv.org/abs/..."
+    arxiv: "http://arxiv.org/abs/2609.28547", 
     code: "https://github.com/Veracitea/PAWS",
     dataset: "data/public-dataset.json",
   },
