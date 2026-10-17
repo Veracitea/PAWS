@@ -1,15 +1,15 @@
 {
   "configured": true,
-  "updatedAt": "2026-10-13T10:39:24.496Z",
-  "totalVisitors": 111,
-  "last30Days": 111,
+  "updatedAt": "2026-10-17T07:50:13.950Z",
+  "totalVisitors": 112,
+  "last30Days": 88,
   "countryCount": 5,
   "privacyThreshold": 5,
   "countries": [
     {
       "code": "SG",
       "name": "Singapore",
-      "visitors": 103
+      "visitors": 104
     },
     {
       "code": "OTHER",
