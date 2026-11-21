@@ -1,8 +1,8 @@
 {
   "configured": true,
-  "updatedAt": "2026-11-18T11:46:14.533Z",
-  "totalVisitors": 136,
-  "last30Days": 21,
+  "updatedAt": "2026-11-21T11:07:29.462Z",
+  "totalVisitors": 139,
+  "last30Days": 19,
   "countryCount": 5,
   "privacyThreshold": 5,
   "countries": [
@@ -12,14 +12,14 @@
       "visitors": 125
     },
     {
+      "code": "US",
+      "name": "United States",
+      "visitors": 8
+    },
+    {
       "code": "OTHER",
       "name": "Other locations",
       "visitors": 6
-    },
-    {
-      "code": "US",
-      "name": "United States",
-      "visitors": 5
     }
   ]
 }
